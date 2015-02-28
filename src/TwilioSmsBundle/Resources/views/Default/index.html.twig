@@ -1,0 +1,13 @@
+{% for message in app.session.flashbag.get("message") %}
+<p style="color: green;">{{ message }}</p><br />
+{% endfor %}
+
+<form method="post" action="{{ path("twilio_sms_send") }}">
+    <label>Enter the receiver's Full Name</label> <br />
+    <input type="text" name="fullname"> <br /><br />
+    <label>Enter the receiver's Phone Number</label> <br>
+    <input type="text" name="telephone"> <br/><br/>
+    <label>Message</label> <br/>
+    <textarea name="message"></textarea> <br/><br/>
+    <button type="submit">Send SMS</button>
+</form>

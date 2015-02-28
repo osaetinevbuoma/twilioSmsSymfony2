@@ -1,0 +1,9 @@
+twilio_sms_homepage:
+    path:     /
+    defaults: { _controller: TwilioSmsBundle:Default:index }
+
+twilio_sms_send:
+    path:     /send-sms/
+    defaults: { _controller: TwilioSmsBundle:Default:sendSMS }
+    methods:  [POST]
+    

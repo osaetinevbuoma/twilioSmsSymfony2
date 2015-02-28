@@ -1,0 +1,4 @@
+services:
+#    twilio_sms.example:
+#        class: TwilioSmsBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
